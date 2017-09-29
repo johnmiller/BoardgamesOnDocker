@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  boardgames.web:
+    image: boardgames.web
+    build:
+      context: ./src/web/Boardgames.Web
+      dockerfile: Dockerfile
+  catalog.api:
+    image: catalog.api
+    build:
+      context: ./src/services/catalog/Catalog.API
+      dockerfile: Dockerfile
